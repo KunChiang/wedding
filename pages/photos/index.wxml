@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="swiper">
+    <swiper indicator-dots="true" autoplay="true" interval="2000" circular="true" easing-function="easeInOutCubic" indicator-color="rgba(255,255,255,0)" indicator-active-color="rgba(255,255,255,0)">
+      <swiper-item wx:for="{{slideList}}" wx:key="*this">
+        <image src="{{item}}" class="slide-image" mode="aspectFit" bindlongpress="saveImage" data-imgUrl='{{item}}'/>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>
+
+<view class="action cf love-new" bindtap="" >
+    <button class="" bindtap="clickHandler" hover-class='btn_hover' hover-stay-time="100">
+        <text class="">❤</text>
+        <!-- 这个爱心自己换上字体或者图片爱心 -->
+    </button>
+</view>
+
+<view class="margin">
+    <like-fx count="{{count}}"></like-fx>
+    <text class="count" wx:if="{{wan}}">赞:{{zCount}}万</text>
+    <text class="count" wx:else>赞:{{zCount}}</text>
+</view>

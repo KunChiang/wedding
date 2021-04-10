@@ -1,0 +1,135 @@
+/**index.wxss**/
+
+.swiper {
+  width: 750rpx;
+  height: 100vh;
+}
+
+.swiper swiper {
+  width: 750rpx;
+  height: 100vh;
+}
+
+.swiper swiper-item {
+  width: 750rpx;
+  height: 100vh;
+}
+
+.swiper image {
+  width: 750rpx;
+  height: 100vh;
+}
+
+.background_music {
+  position: fixed;
+  top: 20rpx;
+  right: 10rpx;
+  z-index: 10001;
+  width: 100rpx;
+}
+
+.musicImg {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.music_icon {
+  animation: musicRotate 3s linear infinite;
+}
+
+.music_play {
+  width: 28rpx;
+  height: 80rpx;
+  margin-left: -5px;
+  transform-origin: top;
+  -webkit-transform: rotate(20deg);
+}
+
+.playImg {
+  animation: musicStop 1s linear forwards;
+}
+
+.pauseImg {
+  animation: musicStart 1s linear forwards;
+}
+
+@-webkit-keyframes musicRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes musicStop {
+  from {
+    -webkit-transform: rotate(20deg);
+  }
+
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes musicStart {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(20deg);
+  }
+}
+
+.music_stop {
+  width: 4em;
+  display: none;
+}
+
+.mini-btn {
+  position: absolute;
+  right: 15px;
+  bottom: 25px;
+}
+
+/* .love-new {
+  position: fixed;
+  width: 100rpx;
+  height: 100rpx;
+  bottom: 45rpx;
+  right: 20rpx;
+  z-index: 1024;
+  opacity: 0.8;
+  border: 1rpx solid #ff3434;
+  border-radius: 100rpx;
+  box-shadow: 0rpx 0rpx 6rpx #ee5151;
+} */
+
+.love-new button {
+  font-size: 70rpx;
+  position: fixed;
+  bottom: 8rpx;
+  right: 15rpx;
+  border-radius: 100rpx;
+  border: 2rpx;
+  background-color: transparent;
+  outline: none;
+  color: #ff3434;
+  text-shadow:6px 2px 6px #ee5151
+}
+
+.margin{
+  margin: 40rpx
+}
+.count{
+  position: absolute;
+  right: 20rpx;
+  bottom: 5rpx;
+  color: #f33838;
+}
+.btn_hover {
+    opacity: 0.6;
+    transform: scale(0.9, 0.9); 
+}
